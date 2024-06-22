@@ -1,0 +1,337 @@
+make[1]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot'
+making sources in ptolemy/plot/demo
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/demo'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/demo'
+making sources in ptolemy/plot/doc
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/doc'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/doc'
+making sources in ptolemy/plot/test
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/test'
+rm -f alljtests.tcl
+echo '# CAUTION: automatically generated file by a rule in ptcommon.mk' > alljtests.tcl
+echo '# This file will source all the Tcl files that use Java. ' >> alljtests.tcl
+echo '# This file will source the tcl files list in the' >> alljtests.tcl
+echo '# makefile SIMPLE_JTESTS and GRAPHICAL_JTESTS variables' >> alljtests.tcl
+echo '# This file is different from all.itcl in that all.itcl' >> alljtests.tcl
+echo '# will source all the .itcl files in the current directory' >> alljtests.tcl
+echo '#' >> alljtests.tcl
+echo '# Set the following to avoid endless calls to exit' >> alljtests.tcl
+echo "if {![info exists reallyExit]} {set reallyExit 0}" >> alljtests.tcl
+echo '# Exiting when there are no more windows is wrong' >> alljtests.tcl
+echo "#::tycho::TopLevel::exitWhenNoMoreWindows 0" >> alljtests.tcl
+echo '# If there is no update command, define a dummy proc.  Jacl needs this' >> alljtests.tcl
+echo 'if {[info command update] == ""} then { ' >> alljtests.tcl
+echo '    proc update {} {}' >> alljtests.tcl
+echo '}' >> alljtests.tcl
+echo "#Do an update so that we are sure tycho is done displaying" >> alljtests.tcl
+echo "update" >> alljtests.tcl
+echo "set savedir \"[pwd]\"" >> alljtests.tcl
+echo "if {\"dummy.tcl\" != \"\"} {foreach i [list dummy.tcl] {puts \$i; cd \"\$savedir\"; if [ file exists \$i ] { if [ catch {source \$i} msg] {puts \"\nWARNING: Sourcing \$i resulted in an error,\nso we are incrementing the error count.\nThe error was: \$msg\n\"; incr FAILED}}}}" >> alljtests.tcl
+if [ "xHistogramMLApplication.tcl PlotApplication.tcl PlotBox.tcl Pxgraph.tcl" != "x" ]; then \
+		for x in HistogramMLApplication.tcl PlotApplication.tcl PlotBox.tcl Pxgraph.tcl; do \
+			echo "puts stderr $x" >> alljtests.tcl; \
+			echo "cd \"\$savedir\"" >> alljtests.tcl; \
+			echo "if [ file exists $x ] { if [catch {source $x} msg] {puts \"\nWARNING: Sourcing $x resulted in an error,\nso we are incrementing the error count\nThe error was \$msg\n\"; incr FAILED}}" >> alljtests.tcl; \
+		done; \
+	fi
+echo "catch {doneTests}" >> alljtests.tcl
+echo "exit" >> alljtests.tcl
+rm -f alljsimpletests.tcl
+echo '# CAUTION: automatically generated file by a rule in ptcommon.mk' > alljsimpletests.tcl
+echo '# This file will source all the Tcl files that use Java. ' >> alljsimpletests.tcl
+echo '# This file will source the tcl files list in the' >> alljsimpletests.tcl
+echo '# makefile SIMPLE_JTESTS variable' >> alljsimpletests.tcl
+echo '# This file is different from all.itcl in that all.itcl' >> alljsimpletests.tcl
+echo '# will source all the .itcl files in the current directory' >> alljsimpletests.tcl
+echo '#' >> alljsimpletests.tcl
+echo '# Set the following to avoid endless calls to exit' >> alljsimpletests.tcl
+echo "if {![info exists reallyExit]} {set reallyExit 0}" >> alljsimpletests.tcl
+echo '# Exiting when there are no more windows is wrong' >> alljsimpletests.tcl
+echo "#::tycho::TopLevel::exitWhenNoMoreWindows 0" >> alljsimpletests.tcl
+echo '# If there is no update command, define a dummy proc.  Jacl needs this' >> alljsimpletests.tcl
+echo 'if {[info command update] == ""} then { ' >> alljsimpletests.tcl
+echo '    proc update {} {}' >> alljsimpletests.tcl
+echo '}' >> alljsimpletests.tcl
+echo "#Do an update so that we are sure tycho is done displaying" >> alljsimpletests.tcl
+echo "update" >> alljsimpletests.tcl
+echo "set savedir \"[pwd]\"" >> alljsimpletests.tcl
+echo "if {\"dummy.tcl\" != \"\"} {foreach i [list dummy.tcl] {puts \$i; cd \"\$savedir\"; if [ file exists \$i ] {source \$i}}}" >> alljsimpletests.tcl
+echo "catch {doneTests}" >> alljsimpletests.tcl
+echo "exit" >> alljsimpletests.tcl
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/test'
+making sources in ptolemy/plot/plotml
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/plotml'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/plotml'
+making sources in ptolemy/plot/compat
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/compat'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/compat'
+making sources in ptolemy/plot/img
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/img'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/img'
+making jclass in ptolemy/plot/demo
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/demo'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/demo'
+making jclass in ptolemy/plot/doc
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/doc'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/doc'
+making jclass in ptolemy/plot/test
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/test'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/test'
+making jclass in ptolemy/plot/plotml
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/plotml'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/plotml'
+making jclass in ptolemy/plot/compat
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/compat'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/compat'
+making jclass in ptolemy/plot/img
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/img'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/img'
+rm -f plotapplet.jar
+(cd ../..; "/usr/lib/jvm/jdk1.6.0_45/bin/jar" cf ptolemy/plot/plotapplet.jar \
+		ptolemy/gui/JFileChooserBugFix.class ptolemy/gui/ImageExportable.class ptolemy/gui/PtGUIUtilities.class ptolemy/gui/Query.class 'ptolemy/gui/Query$1.class' ptolemy/gui/QueryChooser.class ptolemy/gui/QueryListener.class 'ptolemy/gui/Query$QueryScrollPane.class' 'ptolemy/gui/Query$QueryFileChooser.class' 'ptolemy/gui/Query$QueryColorChooser.class' 'ptolemy/gui/Query$QueryActionListener.class' 'ptolemy/gui/Query$QueryFocusListener.class' 'ptolemy/gui/Query$QueryItemListener.class' 'ptolemy/gui/SettableQueryChooser.class' 'ptolemy/gui/ComponentDialog.class' 'ptolemy/gui/ComponentDialog$PropChangeListener.class' 'ptolemy/gui/ComponentDialog$WindowClosingAdapter.class' ptolemy/gui/CloseListener.class 'ptolemy/gui/UndoListener$RedoAction.class' 'ptolemy/gui/UndoListener$UndoAction.class' ptolemy/gui/UndoListener.class ptolemy/util/CancelException.class ptolemy/util/FileUtilities.class ptolemy/util/MessageHandler.class ptolemy/util/RunnableExceptionCatcher.class ptolemy/util/StringUtilities.class ptolemy/plot/CmdLineArgException.class ptolemy/plot/EPSGraphics.class ptolemy/plot/Histogram.class 'ptolemy/plot/Histogram$1.class' 'ptolemy/plot/Histogram$2.class' 'ptolemy/plot/Histogram$3.class' 'ptolemy/plot/Histogram$4.class' 'ptolemy/plot/Histogram$5.class' ptolemy/plot/HistogramApplet.class ptolemy/plot/Plot.class 'ptolemy/plot/Plot$1.class' 'ptolemy/plot/Plot$2.class' 'ptolemy/plot/Plot$3.class' 'ptolemy/plot/Plot$4.class' 'ptolemy/plot/Plot$5.class' 'ptolemy/plot/Plot$6.class' 'ptolemy/plot/Plot$7.class' 'ptolemy/plot/Plot$8.class' 'ptolemy/plot/Plot$9.class' 'ptolemy/plot/Plot$Bin.class' ptolemy/plot/PlotBox.class 'ptolemy/plot/PlotBox$1.class' 'ptolemy/plot/PlotBox$ButtonListener.class' 'ptolemy/plot/PlotBox$CommandListener.class' 'ptolemy/plot/PlotBox$DragListener.class' 'ptolemy/plot/PlotBox$TimedRepaint$1.class' 'ptolemy/plot/PlotBox$TimedRepaint.class' 'ptolemy/plot/PlotBox$ZoomListener.class' ptolemy/plot/PlotBoxInterface.class ptolemy/plot/PlotDataException.class ptolemy/plot/PlotInterface.class ptolemy/plot/PlotPoint.class 'ptolemy/plot/Plot$Format.class' 'ptolemy/plot/PlotFormatter$1.class' 'ptolemy/plot/PlotFormatter$2.class' 'ptolemy/plot/PlotFormatter.class' 'ptolemy/plot/PlotBox$CommandListener.class' 'ptolemy/plot/PlotBox$DragListener.class' 'ptolemy/plot/PlotBox$ZoomListener.class' ptolemy/plot/img/fill.gif ptolemy/plot/img/format.gif ptolemy/plot/img/print.gif ptolemy/plot/img/reset.gif \
+		ptolemy/plot/PlotApplet.class 'ptolemy/plot/PlotApplet$1.class' 'ptolemy/plot/PlotApplet$2.class' 'ptolemy/plot/PlotLive$StartButtonListener.class' 'ptolemy/plot/PlotLive$StopButtonListener.class' ptolemy/plot/PlotLive.class ptolemy/plot/PlotLiveApplet.class \
+            )
+making jars in ptolemy/plot/demo
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/demo'
+rm -rf ptjar_tmpdir demo.jar
+mkdir ptjar_tmpdir
+# Copy any class files from this directory
+mkdir -p ptjar_tmpdir/ptolemy/plot/demo
+cp *.class bargraph.plt data.plt errorbars.plt logaxes.plt plotmlSample.txt sinusoids.xml ptjar_tmpdir/ptolemy/plot/demo
+Creating demo.jar
+(cd ptjar_tmpdir; "/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -cvf tmp.jar .)
+added manifest
+adding: ptolemy/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/demo/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/demo/PlotLiveDemo$1$1.class(in = 940) (out= 483)(deflated 48%)
+adding: ptolemy/plot/demo/PlotDemo.class(in = 2386) (out= 1139)(deflated 52%)
+adding: ptolemy/plot/demo/data.plt(in = 1017) (out= 554)(deflated 45%)
+adding: ptolemy/plot/demo/sinusoids.xml(in = 37716) (out= 7228)(deflated 80%)
+adding: ptolemy/plot/demo/PlotLiveDemo$1.class(in = 1568) (out= 850)(deflated 45%)
+adding: ptolemy/plot/demo/PlotFourierSeries.class(in = 1823) (out= 1136)(deflated 37%)
+adding: ptolemy/plot/demo/bargraph.plt(in = 960) (out= 539)(deflated 43%)
+adding: ptolemy/plot/demo/HistogramDemo.class(in = 498) (out= 301)(deflated 39%)
+adding: ptolemy/plot/demo/PlotLiveDemoApplet.class(in = 726) (out= 426)(deflated 41%)
+adding: ptolemy/plot/demo/plotmlSample.txt(in = 2178) (out= 555)(deflated 74%)
+adding: ptolemy/plot/demo/errorbars.plt(in = 423) (out= 303)(deflated 28%)
+adding: ptolemy/plot/demo/TwoPlotExample.class(in = 4984) (out= 2477)(deflated 50%)
+adding: ptolemy/plot/demo/TwoPlotExample$1.class(in = 550) (out= 347)(deflated 36%)
+adding: ptolemy/plot/demo/PlotLiveDemo.class(in = 1876) (out= 1055)(deflated 43%)
+adding: ptolemy/plot/demo/logaxes.plt(in = 1064) (out= 569)(deflated 46%)
+mv ptjar_tmpdir/tmp.jar demo.jar
+"/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -i demo.jar
+rm -rf ptjar_tmpdir
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/demo'
+making jars in ptolemy/plot/doc
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/doc'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/doc'
+making jars in ptolemy/plot/test
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/test'
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/test'
+making jars in ptolemy/plot/plotml
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/plotml'
+rm -rf ptjar_tmpdir plotml.jar
+mkdir ptjar_tmpdir
+# Copy any class files from this directory
+mkdir -p ptjar_tmpdir/ptolemy/plot/plotml
+cp *.class  ptjar_tmpdir/ptolemy/plot/plotml
+Creating plotml.jar
+(cd ptjar_tmpdir; "/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -cvf tmp.jar .)
+added manifest
+adding: ptolemy/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/plotml/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplication$1.class(in = 1101) (out= 613)(deflated 44%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplet$1.class(in = 251) (out= 174)(deflated 30%)
+adding: ptolemy/plot/plotml/HistogramMLApplication$1.class(in = 1083) (out= 603)(deflated 44%)
+adding: ptolemy/plot/plotml/HistogramMLApplication.class(in = 3009) (out= 1553)(deflated 48%)
+adding: ptolemy/plot/plotml/PlotMLApplication$1.class(in = 1056) (out= 603)(deflated 42%)
+adding: ptolemy/plot/plotml/PlotMLParser.class(in = 5268) (out= 2872)(deflated 45%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplet$ChoiceListener.class(in = 1353) (out= 604)(deflated 55%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplication$SelectListener.class(in = 833) (out= 417)(deflated 49%)
+adding: ptolemy/plot/plotml/HistogramMLParser.class(in = 3083) (out= 1700)(deflated 44%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplication.class(in = 5039) (out= 2550)(deflated 49%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplet.class(in = 2358) (out= 1189)(deflated 49%)
+adding: ptolemy/plot/plotml/PlotMLApplication.class(in = 4430) (out= 2383)(deflated 46%)
+adding: ptolemy/plot/plotml/HistogramMLApplet.class(in = 924) (out= 499)(deflated 45%)
+adding: ptolemy/plot/plotml/PlotMLFrame.class(in = 3175) (out= 1745)(deflated 45%)
+adding: ptolemy/plot/plotml/PlotBoxMLParser.class(in = 8759) (out= 3845)(deflated 56%)
+adding: ptolemy/plot/plotml/PlotMLApplet.class(in = 2768) (out= 1517)(deflated 45%)
+mv ptjar_tmpdir/tmp.jar plotml.jar
+"/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -i plotml.jar
+rm -rf ptjar_tmpdir
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/plotml'
+making jars in ptolemy/plot/compat
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/compat'
+rm -rf ptjar_tmpdir compat.jar
+mkdir ptjar_tmpdir
+# Copy any class files from this directory
+mkdir -p ptjar_tmpdir/ptolemy/plot/compat
+cp *.class  ptjar_tmpdir/ptolemy/plot/compat
+Creating compat.jar
+(cd ptjar_tmpdir; "/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -cvf tmp.jar .)
+added manifest
+adding: ptolemy/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/compat/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/compat/PxgraphApplication.class(in = 7629) (out= 4046)(deflated 46%)
+adding: ptolemy/plot/compat/PxgraphParser.class(in = 11253) (out= 6498)(deflated 42%)
+adding: ptolemy/plot/compat/PxgraphApplet.class(in = 2839) (out= 1465)(deflated 48%)
+adding: ptolemy/plot/compat/PxgraphApplication$1.class(in = 1057) (out= 604)(deflated 42%)
+mv ptjar_tmpdir/tmp.jar compat.jar
+"/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -i compat.jar
+rm -rf ptjar_tmpdir
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/compat'
+making jars in ptolemy/plot/img
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/img'
+rm -rf ptjar_tmpdir img.jar
+mkdir ptjar_tmpdir
+# Copy any class files from this directory
+mkdir -p ptjar_tmpdir/ptolemy/plot/img
+cp *.class fill.gif format.gif print.gif reset.gif ptjar_tmpdir/ptolemy/plot/img
+cp: cannot stat `*.class': No such file or directory
+make[2]: [img.jar] Error 1 (ignored)
+Creating img.jar
+(cd ptjar_tmpdir; "/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -cvf tmp.jar .)
+added manifest
+adding: ptolemy/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/img/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/img/print.gif(in = 923) (out= 314)(deflated 65%)
+adding: ptolemy/plot/img/format.gif(in = 141) (out= 138)(deflated 2%)
+adding: ptolemy/plot/img/fill.gif(in = 113) (out= 115)(deflated -1%)
+adding: ptolemy/plot/img/reset.gif(in = 145) (out= 143)(deflated 1%)
+mv ptjar_tmpdir/tmp.jar img.jar
+"/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -i img.jar
+rm -rf ptjar_tmpdir
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/ptolemy/plot/img'
+rm -rf ptjar_tmpdir plot.jar
+mkdir ptjar_tmpdir
+# Copy any class files from this directory
+mkdir -p ptjar_tmpdir/ptolemy/plot
+cp *.class  ptjar_tmpdir/ptolemy/plot
+for jar in img/img.jar plotml/plotml.jar ; do \
+		echo "Unjarring $jar"; \
+		(cd ptjar_tmpdir; "/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -xf ../$jar); \
+	done
+Unjarring img/img.jar
+Unjarring plotml/plotml.jar
+rm -rf ptjar_tmpdir/META-INF
+Creating plot.jar
+(cd ptjar_tmpdir; "/usr/lib/jvm/jdk1.6.0_45/bin/jar" -cvf tmp.jar .)
+added manifest
+adding: ptolemy/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/PlotApplet$1.class(in = 943) (out= 506)(deflated 46%)
+adding: ptolemy/plot/Plot$2.class(in = 885) (out= 544)(deflated 38%)
+adding: ptolemy/plot/PlotLiveApplet.class(in = 797) (out= 457)(deflated 42%)
+adding: ptolemy/plot/PlotApplication.class(in = 6311) (out= 3431)(deflated 45%)
+adding: ptolemy/plot/PlotBox.class(in = 55192) (out= 28441)(deflated 48%)
+adding: ptolemy/plot/PlotApplication$WindowClosingAdapter.class(in = 857) (out= 428)(deflated 50%)
+adding: ptolemy/plot/PlotFrame$FileMenuListener.class(in = 1902) (out= 1044)(deflated 45%)
+adding: ptolemy/plot/EPSGraphics.class(in = 11806) (out= 4853)(deflated 58%)
+adding: ptolemy/plot/Plot.class(in = 41213) (out= 21506)(deflated 47%)
+adding: ptolemy/plot/PlotLive$StartButtonListener.class(in = 706) (out= 395)(deflated 44%)
+adding: ptolemy/plot/PlotFrame$EPSFileFilter.class(in = 1126) (out= 673)(deflated 40%)
+adding: ptolemy/plot/PlotLive.class(in = 2602) (out= 1377)(deflated 47%)
+adding: ptolemy/plot/EditablePlot$UndoListener.class(in = 1195) (out= 664)(deflated 44%)
+adding: ptolemy/plot/PlotApplet$2.class(in = 3383) (out= 1768)(deflated 47%)
+adding: ptolemy/plot/Histogram$3.class(in = 600) (out= 374)(deflated 37%)
+adding: ptolemy/plot/EditListener.class(in = 179) (out= 147)(deflated 17%)
+adding: ptolemy/plot/Histogram$2.class(in = 649) (out= 418)(deflated 35%)
+adding: ptolemy/plot/EditablePlot.class(in = 6688) (out= 3430)(deflated 48%)
+adding: ptolemy/plot/PlotBox$ZoomListener.class(in = 1289) (out= 635)(deflated 50%)
+adding: ptolemy/plot/PlotFormatter.class(in = 8393) (out= 4219)(deflated 49%)
+adding: ptolemy/plot/Plot$5.class(in = 666) (out= 435)(deflated 34%)
+adding: ptolemy/plot/PlotBox$1.class(in = 622) (out= 388)(deflated 37%)
+adding: ptolemy/plot/PlotLive$StopButtonListener.class(in = 703) (out= 394)(deflated 43%)
+adding: ptolemy/plot/img/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/img/print.gif(in = 923) (out= 314)(deflated 65%)
+adding: ptolemy/plot/img/format.gif(in = 141) (out= 138)(deflated 2%)
+adding: ptolemy/plot/img/fill.gif(in = 113) (out= 115)(deflated -1%)
+adding: ptolemy/plot/img/reset.gif(in = 145) (out= 143)(deflated 1%)
+adding: ptolemy/plot/Plot$Format.class(in = 877) (out= 505)(deflated 42%)
+adding: ptolemy/plot/PlotPoint.class(in = 470) (out= 324)(deflated 31%)
+adding: ptolemy/plot/Histogram.class(in = 14634) (out= 7741)(deflated 47%)
+adding: ptolemy/plot/EditablePlot$EditMouseListener.class(in = 1292) (out= 593)(deflated 54%)
+adding: ptolemy/plot/EditablePlot$ModifyListener.class(in = 977) (out= 523)(deflated 46%)
+adding: ptolemy/plot/PlotBox$CommandListener.class(in = 2172) (out= 1272)(deflated 41%)
+adding: ptolemy/plot/PlotBox$TimedRepaint$1.class(in = 1236) (out= 698)(deflated 43%)
+adding: ptolemy/plot/Plot$4.class(in = 620) (out= 410)(deflated 33%)
+adding: ptolemy/plot/PlotBox$TimedRepaint.class(in = 1592) (out= 824)(deflated 48%)
+adding: ptolemy/plot/PlotBoxInterface.class(in = 2439) (out= 1024)(deflated 58%)
+adding: ptolemy/plot/Plot$6.class(in = 570) (out= 367)(deflated 35%)
+adding: ptolemy/plot/PlotFrame$FolderForLatex.class(in = 753) (out= 465)(deflated 38%)
+adding: ptolemy/plot/PlotFormatter$2.class(in = 1493) (out= 803)(deflated 46%)
+adding: ptolemy/plot/Histogram$4.class(in = 708) (out= 433)(deflated 38%)
+adding: ptolemy/plot/Plot$7.class(in = 2485) (out= 1194)(deflated 51%)
+adding: ptolemy/plot/Plot$8.class(in = 710) (out= 444)(deflated 37%)
+adding: ptolemy/plot/CmdLineArgException.class(in = 455) (out= 279)(deflated 38%)
+adding: ptolemy/plot/Plot$Bin.class(in = 3725) (out= 1680)(deflated 54%)
+adding: ptolemy/plot/PlotBox$ButtonListener.class(in = 3980) (out= 1937)(deflated 51%)
+adding: ptolemy/plot/PlotFrame$FormatListener.class(in = 1484) (out= 794)(deflated 46%)
+adding: ptolemy/plot/Histogram$5.class(in = 2307) (out= 1239)(deflated 46%)
+adding: ptolemy/plot/HistogramApplet.class(in = 655) (out= 391)(deflated 40%)
+adding: ptolemy/plot/PlotFrame$PLTOrXMLFileFilter.class(in = 1145) (out= 688)(deflated 39%)
+adding: ptolemy/plot/plotml/(in = 0) (out= 0)(stored 0%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplication$1.class(in = 1101) (out= 613)(deflated 44%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplet$1.class(in = 251) (out= 174)(deflated 30%)
+adding: ptolemy/plot/plotml/HistogramMLApplication$1.class(in = 1083) (out= 603)(deflated 44%)
+adding: ptolemy/plot/plotml/HistogramMLApplication.class(in = 3009) (out= 1553)(deflated 48%)
+adding: ptolemy/plot/plotml/PlotMLApplication$1.class(in = 1056) (out= 603)(deflated 42%)
+adding: ptolemy/plot/plotml/PlotMLParser.class(in = 5268) (out= 2872)(deflated 45%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplet$ChoiceListener.class(in = 1353) (out= 604)(deflated 55%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplication$SelectListener.class(in = 833) (out= 417)(deflated 49%)
+adding: ptolemy/plot/plotml/HistogramMLParser.class(in = 3083) (out= 1700)(deflated 44%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplication.class(in = 5039) (out= 2550)(deflated 49%)
+adding: ptolemy/plot/plotml/EditablePlotMLApplet.class(in = 2358) (out= 1189)(deflated 49%)
+adding: ptolemy/plot/plotml/PlotMLApplication.class(in = 4430) (out= 2383)(deflated 46%)
+adding: ptolemy/plot/plotml/HistogramMLApplet.class(in = 924) (out= 499)(deflated 45%)
+adding: ptolemy/plot/plotml/PlotMLFrame.class(in = 3175) (out= 1745)(deflated 45%)
+adding: ptolemy/plot/plotml/PlotBoxMLParser.class(in = 8759) (out= 3845)(deflated 56%)
+adding: ptolemy/plot/plotml/PlotMLApplet.class(in = 2768) (out= 1517)(deflated 45%)
+adding: ptolemy/plot/PlotFrame$SpecialMenuListener.class(in = 1999) (out= 1114)(deflated 44%)
+adding: ptolemy/plot/Histogram$1.class(in = 698) (out= 442)(deflated 36%)
+adding: ptolemy/plot/Plot$9.class(in = 2483) (out= 1371)(deflated 44%)
+adding: ptolemy/plot/Plot$3.class(in = 619) (out= 409)(deflated 33%)
+adding: ptolemy/plot/PlotDataException.class(in = 444) (out= 275)(deflated 38%)
+adding: ptolemy/plot/PlotFormatter$1.class(in = 2387) (out= 1268)(deflated 46%)
+adding: ptolemy/plot/PlotBox$DragListener.class(in = 922) (out= 527)(deflated 42%)
+adding: ptolemy/plot/Plot$1.class(in = 787) (out= 491)(deflated 37%)
+adding: ptolemy/plot/PlotInterface.class(in = 1302) (out= 645)(deflated 50%)
+adding: ptolemy/plot/PlotFrame.class(in = 14873) (out= 7442)(deflated 49%)
+adding: ptolemy/plot/PlotApplet.class(in = 3004) (out= 1500)(deflated 50%)
+adding: ptolemy/plot/PlotFrame$FilterForGIF.class(in = 1107) (out= 665)(deflated 39%)
+adding: ptolemy/plot/PlotApplication$1.class(in = 1027) (out= 598)(deflated 41%)
+mv ptjar_tmpdir/tmp.jar plot.jar
+"/usr/lib/jvm/jdk1.6.0_45/bin/jar"  -i plot.jar
+rm -rf ptjar_tmpdir
+rm -f pxgraphapplet.jar
+(cd ../..; "/usr/lib/jvm/jdk1.6.0_45/bin/jar" cf ptolemy/plot/pxgraphapplet.jar \
+		ptolemy/gui/JFileChooserBugFix.class ptolemy/gui/ImageExportable.class ptolemy/gui/PtGUIUtilities.class ptolemy/gui/Query.class 'ptolemy/gui/Query$1.class' ptolemy/gui/QueryChooser.class ptolemy/gui/QueryListener.class 'ptolemy/gui/Query$QueryScrollPane.class' 'ptolemy/gui/Query$QueryFileChooser.class' 'ptolemy/gui/Query$QueryColorChooser.class' 'ptolemy/gui/Query$QueryActionListener.class' 'ptolemy/gui/Query$QueryFocusListener.class' 'ptolemy/gui/Query$QueryItemListener.class' 'ptolemy/gui/SettableQueryChooser.class' 'ptolemy/gui/ComponentDialog.class' 'ptolemy/gui/ComponentDialog$PropChangeListener.class' 'ptolemy/gui/ComponentDialog$WindowClosingAdapter.class' ptolemy/gui/CloseListener.class 'ptolemy/gui/UndoListener$RedoAction.class' 'ptolemy/gui/UndoListener$UndoAction.class' ptolemy/gui/UndoListener.class ptolemy/util/CancelException.class ptolemy/util/FileUtilities.class ptolemy/util/MessageHandler.class ptolemy/util/RunnableExceptionCatcher.class ptolemy/util/StringUtilities.class ptolemy/plot/CmdLineArgException.class ptolemy/plot/EPSGraphics.class ptolemy/plot/Histogram.class 'ptolemy/plot/Histogram$1.class' 'ptolemy/plot/Histogram$2.class' 'ptolemy/plot/Histogram$3.class' 'ptolemy/plot/Histogram$4.class' 'ptolemy/plot/Histogram$5.class' ptolemy/plot/HistogramApplet.class ptolemy/plot/Plot.class 'ptolemy/plot/Plot$1.class' 'ptolemy/plot/Plot$2.class' 'ptolemy/plot/Plot$3.class' 'ptolemy/plot/Plot$4.class' 'ptolemy/plot/Plot$5.class' 'ptolemy/plot/Plot$6.class' 'ptolemy/plot/Plot$7.class' 'ptolemy/plot/Plot$8.class' 'ptolemy/plot/Plot$9.class' 'ptolemy/plot/Plot$Bin.class' ptolemy/plot/PlotBox.class 'ptolemy/plot/PlotBox$1.class' 'ptolemy/plot/PlotBox$ButtonListener.class' 'ptolemy/plot/PlotBox$CommandListener.class' 'ptolemy/plot/PlotBox$DragListener.class' 'ptolemy/plot/PlotBox$TimedRepaint$1.class' 'ptolemy/plot/PlotBox$TimedRepaint.class' 'ptolemy/plot/PlotBox$ZoomListener.class' ptolemy/plot/PlotBoxInterface.class ptolemy/plot/PlotDataException.class ptolemy/plot/PlotInterface.class ptolemy/plot/PlotPoint.class 'ptolemy/plot/Plot$Format.class' 'ptolemy/plot/PlotFormatter$1.class' 'ptolemy/plot/PlotFormatter$2.class' 'ptolemy/plot/PlotFormatter.class' 'ptolemy/plot/PlotBox$CommandListener.class' 'ptolemy/plot/PlotBox$DragListener.class' 'ptolemy/plot/PlotBox$ZoomListener.class' ptolemy/plot/img/fill.gif ptolemy/plot/img/format.gif ptolemy/plot/img/print.gif ptolemy/plot/img/reset.gif \
+		ptolemy/plot/PlotApplet.class 'ptolemy/plot/PlotApplet$1.class' 'ptolemy/plot/PlotApplet$2.class' 'ptolemy/plot/PlotLive$StartButtonListener.class' 'ptolemy/plot/PlotLive$StopButtonListener.class' ptolemy/plot/PlotLive.class ptolemy/plot/PlotLiveApplet.class \
+		ptolemy/plot/compat/PxgraphApplet.class \
+		ptolemy/plot/compat/PxgraphApplication.class \
+		ptolemy/plot/compat/PxgraphParser.class \
+            )
+rm -f plotmlapplet.jar
+(cd ../..; "/usr/lib/jvm/jdk1.6.0_45/bin/jar" cf ptolemy/plot/plotmlapplet.jar \
+		ptolemy/gui/JFileChooserBugFix.class ptolemy/gui/ImageExportable.class ptolemy/gui/PtGUIUtilities.class ptolemy/gui/Query.class 'ptolemy/gui/Query$1.class' ptolemy/gui/QueryChooser.class ptolemy/gui/QueryListener.class 'ptolemy/gui/Query$QueryScrollPane.class' 'ptolemy/gui/Query$QueryFileChooser.class' 'ptolemy/gui/Query$QueryColorChooser.class' 'ptolemy/gui/Query$QueryActionListener.class' 'ptolemy/gui/Query$QueryFocusListener.class' 'ptolemy/gui/Query$QueryItemListener.class' 'ptolemy/gui/SettableQueryChooser.class' 'ptolemy/gui/ComponentDialog.class' 'ptolemy/gui/ComponentDialog$PropChangeListener.class' 'ptolemy/gui/ComponentDialog$WindowClosingAdapter.class' ptolemy/gui/CloseListener.class 'ptolemy/gui/UndoListener$RedoAction.class' 'ptolemy/gui/UndoListener$UndoAction.class' ptolemy/gui/UndoListener.class ptolemy/util/CancelException.class ptolemy/util/FileUtilities.class ptolemy/util/MessageHandler.class ptolemy/util/RunnableExceptionCatcher.class ptolemy/util/StringUtilities.class ptolemy/plot/CmdLineArgException.class ptolemy/plot/EPSGraphics.class ptolemy/plot/Histogram.class 'ptolemy/plot/Histogram$1.class' 'ptolemy/plot/Histogram$2.class' 'ptolemy/plot/Histogram$3.class' 'ptolemy/plot/Histogram$4.class' 'ptolemy/plot/Histogram$5.class' ptolemy/plot/HistogramApplet.class ptolemy/plot/Plot.class 'ptolemy/plot/Plot$1.class' 'ptolemy/plot/Plot$2.class' 'ptolemy/plot/Plot$3.class' 'ptolemy/plot/Plot$4.class' 'ptolemy/plot/Plot$5.class' 'ptolemy/plot/Plot$6.class' 'ptolemy/plot/Plot$7.class' 'ptolemy/plot/Plot$8.class' 'ptolemy/plot/Plot$9.class' 'ptolemy/plot/Plot$Bin.class' ptolemy/plot/PlotBox.class 'ptolemy/plot/PlotBox$1.class' 'ptolemy/plot/PlotBox$ButtonListener.class' 'ptolemy/plot/PlotBox$CommandListener.class' 'ptolemy/plot/PlotBox$DragListener.class' 'ptolemy/plot/PlotBox$TimedRepaint$1.class' 'ptolemy/plot/PlotBox$TimedRepaint.class' 'ptolemy/plot/PlotBox$ZoomListener.class' ptolemy/plot/PlotBoxInterface.class ptolemy/plot/PlotDataException.class ptolemy/plot/PlotInterface.class ptolemy/plot/PlotPoint.class 'ptolemy/plot/Plot$Format.class' 'ptolemy/plot/PlotFormatter$1.class' 'ptolemy/plot/PlotFormatter$2.class' 'ptolemy/plot/PlotFormatter.class' 'ptolemy/plot/PlotBox$CommandListener.class' 'ptolemy/plot/PlotBox$DragListener.class' 'ptolemy/plot/PlotBox$ZoomListener.class' ptolemy/plot/img/fill.gif ptolemy/plot/img/format.gif ptolemy/plot/img/print.gif ptolemy/plot/img/reset.gif \
+		ptolemy/plot/PlotApplet.class 'ptolemy/plot/PlotApplet$1.class' 'ptolemy/plot/PlotApplet$2.class' 'ptolemy/plot/PlotLive$StartButtonListener.class' 'ptolemy/plot/PlotLive$StopButtonListener.class' ptolemy/plot/PlotLive.class ptolemy/plot/PlotLiveApplet.class \
+		'ptolemy/plot/PlotApplication$1.class' 'ptolemy/plot/PlotApplication$WindowClosingAdapter.class' ptolemy/plot/PlotApplication.class \
+		'ptolemy/plot/EditablePlot$EditMouseListener.class' 'ptolemy/plot/EditablePlot$ModifyListener.class' 'ptolemy/plot/EditablePlot$UndoListener.class' ptolemy/plot/EditablePlot.class ptolemy/plot/EditListener.class ptolemy/plot/Histogram.class ptolemy/plot/HistogramApplet.class 'ptolemy/plot/PlotFrame$EPSFileFilter.class' 'ptolemy/plot/PlotFrame$FileMenuListener.class' 'ptolemy/plot/PlotFrame$FormatListener.class' 'ptolemy/plot/PlotFrame$PLTOrXMLFileFilter.class' 'ptolemy/plot/PlotFrame$SpecialMenuListener.class' ptolemy/plot/PlotFrame.class \
+		ptolemy/plot/plotml/*.class \
+		com/microstar/xml/README.txt \
+		com/microstar/xml/*.class \
+            )
+(cd ../../bin; make install)
+make[2]: Entering directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/bin'
+chmod a+x hyvisual startjini mkjnlp mkl4j mkosgi ptjunit updateFmu viptos 
+make[2]: Leaving directory `/home/cxh/src/ptII10.0.1/adm/gen-10.0/tmp/build/ptII10.0.1/bin'
+Creating adm/tmp
+mkdir -p adm/tmp/ptplot5.10
+(cd ../..; \
+	 	tar -cf - --exclude="adm" --exclude="CVS" --exclude=".svn" -X ptolemy/plot/adm/tmp/ptplot5.10.ex \
+			ptolemy/plot build.xml.in config/confTest.java config/install-sh config/JavaHome.java config/RootDirectory.java config/SystemJar.java configure configure.in copyright.txt .classpath.in mk/ptII.mk.in mk/ptcommon.mk mk/ptdir.mk mk/ptno-compile.mk mk/ptdist.mk) | \
+	(cd adm/tmp/ptplot5.10; tar -xf -)
